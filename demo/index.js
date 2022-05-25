@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
             res.writeHead(200, {'Content-Type':'text/html'});
     
             res.end(content);
-            console.log(path.join(__dirname, 'public', 'index.html'));
+            // console.log(path.join(__dirname, 'public', 'index.html'));
         })
     }else if(req.url=='/about.html'){
         fs.readFile(path.join(__dirname, 'public', 'about.html'), (err, content)=>{
