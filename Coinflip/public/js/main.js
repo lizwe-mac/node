@@ -13,4 +13,6 @@ function main(){
     return result
 }
 
+main()
+
 
